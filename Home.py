@@ -12,4 +12,4 @@ else:
     with open(f"posts/{p}", 'r') as file:
       # data = file.read().replace('\n', '')
       data = file.read()
-      st.markdown(p)
+      st.markdown(data)
