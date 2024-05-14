@@ -9,4 +9,7 @@ if len(post_dir) == 0:
   st.write("No posts have been posted yet. Please check back later.")
 else:
   for p in post_dir:
-    st.write(p)
+    with open(p, 'r') as file:
+    # data = file.read().replace('\n', '')
+    data = file.read()
+    st.markdown(p)
