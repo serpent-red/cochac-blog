@@ -10,6 +10,6 @@ if len(post_dir) == 0:
 else:
   for p in post_dir:
     with open(p, 'r') as file:
-    # data = file.read().replace('\n', '')
-    data = file.read()
-    st.markdown(p)
+      # data = file.read().replace('\n', '')
+      data = file.read()
+      st.markdown(p)
